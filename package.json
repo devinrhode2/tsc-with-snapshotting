@@ -1,0 +1,33 @@
+{
+  "name": "tsc-with-snapshotting",
+  "version": "0.0.0",
+  "description": "Gain control over un-typed js projects by running `tsc-with-snapshotting` in place of `tsc`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinrhode2/tsc-with-snapshotting.git"
+  },
+  "keywords": [
+    "tsc",
+    "diff",
+    "tsc-with-snapshotting",
+    "ts-expect-error",
+    "ts-expect-error-snapshot",
+    "JoshuaKGoldberg",
+    "phenomnomnominal",
+    "typescript",
+    "pre-commit",
+    "watcher",
+    "tsc-watcher",
+    "deno"
+  ],
+  "author": "devinrhode2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devinrhode2/tsc-with-snapshotting/issues"
+  },
+  "homepage": "https://github.com/devinrhode2/tsc-with-snapshotting#readme"
+}
