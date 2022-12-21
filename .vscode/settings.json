@@ -1,0 +1,5 @@
+{
+  // Devin doesn't want branch protection right now:
+  "git.branchProtectionPrompt": "alwaysCommit",
+  "git.branchProtection": []
+}
