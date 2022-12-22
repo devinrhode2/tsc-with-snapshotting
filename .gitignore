@@ -1,0 +1,5 @@
+node_modules
+
+# Always get latest:
+# This does mean when things get fishy, we'll want to start comparing bun.lockb files manually, or push them all to some dep-issue/devin, dep-issue/jonah branches
+bun.lockb

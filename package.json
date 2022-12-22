@@ -4,7 +4,8 @@
   "description": "Gain control over un-typed js projects by running `tsc-with-snapshotting` in place of `tsc`",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cp bun.lockb last-good.bun.lockb"
   },
   "bin": {
     "tsc-with-snapshotting": "bun ./bin/tsc-with-snapshotting.mjs"
