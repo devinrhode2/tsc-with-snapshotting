@@ -24,8 +24,7 @@
     "typescript",
     "pre-commit",
     "watcher",
-    "tsc-watcher",
-    "deno"
+    "tsc-watcher"
   ],
   "author": "devinrhode2",
   "license": "MIT",
