@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/devinrhode2/tsc-with-snapshotting/issues"
   },
-  "homepage": "https://github.com/devinrhode2/tsc-with-snapshotting#readme"
+  "homepage": "https://github.com/devinrhode2/tsc-with-snapshotting#readme",
+  "dependencies": {
+    "bun-types": "^0.3.0"
+  }
 }
