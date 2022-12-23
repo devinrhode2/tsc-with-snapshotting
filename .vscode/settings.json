@@ -3,6 +3,11 @@
   "git.branchProtectionPrompt": "alwaysCommit",
   "git.branchProtection": [],
 
+  // // Format markdown correctly:
+  // "[markdown]": {
+  //   "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  // },
+
   // Nice to have for any repo:
   // (use `typescript` version that's inside `node_modules`)
   "typescript.tsdk": "./node_modules/typescript/lib",
