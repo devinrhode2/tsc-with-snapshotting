@@ -3,6 +3,10 @@
   "git.branchProtectionPrompt": "alwaysCommit",
   "git.branchProtection": [],
 
+  // Nice to have for any repo:
+  // (use `typescript` version that's inside `node_modules`)
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
   // Generic settings for our repo:
   "editor.tabSize": 2,
 
