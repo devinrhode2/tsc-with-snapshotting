@@ -2,6 +2,13 @@
   "compilerOptions": {
     "allowJs": true,
     "checkJs": true,
-    "noEmit": true
+    "noEmit": true,
+
+    // from https://github.com/oven-sh/bun/tree/main/packages/bun-types#usage
+    "lib": ["ESNext"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "types": ["bun-types"]
   }
 }
