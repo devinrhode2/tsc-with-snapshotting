@@ -1,5 +1,64 @@
 {
   // Devin doesn't want branch protection right now:
   "git.branchProtectionPrompt": "alwaysCommit",
-  "git.branchProtection": []
+  "git.branchProtection": [],
+
+  // Generic settings for our repo:
+  "editor.tabSize": 2,
+
+  // By default, format ALL file types with prettier onSave:
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Enable eslint vscode extension:
+  "eslint.enable": true,
+  "eslint.format.enable": false, // assert default
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "prettier.useEditorConfig": true,
+  "eslint.useESLintClass": true,
+  "eslint.packageManager": "yarn",
+  "eslint.probe": [],
+
+  // To improve performance a little bit, comment out rest of settings, and un-comment this line.
+  // "editor.codeActionsOnSave": [
+  //   "source.fixAll.eslint"
+  // ]
+  // There is a small risk of hitting bugs like this: https://github.com/prettier/prettier-vscode/issues/1555
+
+  // Run eslint on save, then prettier afterwards
+  // Apologies if this affects any of your personal extensions - maybe we can add them into the repo?
+  "editor.codeActionsOnSave": {},
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.fixAll.eslint",
+      "source.formatDocument"
+    ]
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.fixAll.eslint",
+      "source.formatDocument"
+    ]
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.fixAll.eslint",
+      "source.formatDocument"
+    ]
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": [
+      "source.fixAll.eslint",
+      "source.formatDocument"
+    ]
+  }
 }
