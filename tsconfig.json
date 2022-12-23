@@ -10,5 +10,26 @@
     "target": "ESNext",
     "moduleResolution": "Node",
     "types": ["bun-types"]
-  }
+  },
+  "typeRoots": [
+    "./node_modules/@types",
+    "./global-types"
+  ],
+  "include": [
+    "**/*.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/.*rc.js",
+    "**/*.mjs",
+    "**/*.cjs"
+  ],
+  "exclude": [
+    "**/*.test.*",
+    "node_modules",
+    "dist",
+    "public",
+    "coverage"
+  ]
 }
