@@ -8,4 +8,5 @@ cp bun.lockb last-good.bun.lockb
 # it can fail if it's making certain assumptions about the terminal (i.e. that it's bash, etc)
 git config --local core.eol lf && \
 git config --local core.autocrlf false && \
-git config --local blame.ignoreRevsFile .git-blame-ignore-revs || echo "not a git repo, skipping git config"
+git config --local blame.ignoreRevsFile .git-blame-ignore-revs && \
+git config --local push.useForceIfIncludes true || echo "not a git repo, skipping git config"

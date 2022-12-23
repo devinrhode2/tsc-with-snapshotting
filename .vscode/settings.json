@@ -7,6 +7,12 @@
   // (use `typescript` version that's inside `node_modules`)
   "typescript.tsdk": "./node_modules/typescript/lib",
 
+  // Better safe than sorry:
+  "git.useForcePushWithLease": true,
+
+  // Force fetching locally
+  "git.autofetch": false,
+
   // Generic settings for our repo:
   "editor.tabSize": 2,
 
