@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cp bun.lockb last-good.bun.lockb",
+    "postinstall": "./scripts/postinstall.sh",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
   },
