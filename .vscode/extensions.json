@@ -4,6 +4,10 @@
     "rohit-gohri.format-code-action",
 
     "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "wix.vscode-import-cost",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker"
   ]
 }
