@@ -2,10 +2,11 @@
 
 cp bun.lockb last-good.bun.lockb
 
-# Could use this approach, but it seems less secure:
-# git config --local include.path $(git rev-parse --show-toplevel)/.gitconfig || echo "not a git repo, skipping git blame config"
-# Also, if this code is embeded back into the package.json postinstall string,
-# it can fail if it's making certain assumptions about the terminal (i.e. that it's bash, etc)
+# Git does not support in-repo .gitconfig files. This is due to security reasons.
+# We could work around this by running:
+#   git config --local include.path $(git rev-parse --show-toplevel)/.gitconfig || echo "not a git repo, skipping git blame config"
+# But then we suffer from same security issues, and this command won't work on windows without some elbow grease.
+#
 git config --local core.eol lf && \
 git config --local core.autocrlf false && \
 git config --local blame.ignoreRevsFile .git-blame-ignore-revs && \
