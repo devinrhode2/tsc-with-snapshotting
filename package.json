@@ -36,8 +36,11 @@
   },
   "homepage": "https://github.com/devinrhode2/tsc-with-snapshotting#readme",
   "dependencies": {
+    "@types/node": "latest",
     "@types/prettier": "^2.7.2",
     "bun-types": "^0.3.0",
+    "execa": "^6.1.0",
+    "fs-extra": "^11.1.0",
     "prettier": "^2.8.1"
   }
 }
