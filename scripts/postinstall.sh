@@ -17,4 +17,6 @@ git config --local rebase.stat true && \
 git config --local rebase.missingCommitsCheck error && \
 git config --local rebase.rescheduleFailedExec true && \
 git config --local rebase.updateRefs true && \
+git config --local rebase.autoSquash true && \
+git config --local rebase.autoStash true && \
 git config --local push.useForceIfIncludes true || echo "not a git repo, skipping git config"
