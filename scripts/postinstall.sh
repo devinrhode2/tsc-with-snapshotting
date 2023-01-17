@@ -12,4 +12,9 @@ git config --local core.autocrlf false && \
 git config --local blame.ignoreRevsFile .git-blame-ignore-revs && \
 git config --local notes.rewriteRef refs/notes/commits && \
 git config --local pull.rebase true && \
+git config --local fetch.showForcedUpdates true && \
+git config --local rebase.stat true && \
+git config --local rebase.missingCommitsCheck error && \
+git config --local rebase.rescheduleFailedExec true && \
+git config --local rebase.updateRefs true && \
 git config --local push.useForceIfIncludes true || echo "not a git repo, skipping git config"
