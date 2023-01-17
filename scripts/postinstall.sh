@@ -10,4 +10,5 @@ cp bun.lockb last-good.bun.lockb
 git config --local core.eol lf && \
 git config --local core.autocrlf false && \
 git config --local blame.ignoreRevsFile .git-blame-ignore-revs && \
+git config --local notes.rewriteRef refs/notes/commits && \
 git config --local push.useForceIfIncludes true || echo "not a git repo, skipping git config"
