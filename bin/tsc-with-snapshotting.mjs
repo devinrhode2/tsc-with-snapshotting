@@ -10,8 +10,7 @@ import { execa } from 'execa'
 // } from 'fs-extra/esm'
 
 const tscOptions = ['--watch']
-const tscCall =
-  'yarn tsc ' + tscOptions.join(' ')
+const tscCall = 'yarn tsc ' + tscOptions.join(' ')
 
 console.warn(
   'Running: ' + tscCall,
@@ -29,4 +28,5 @@ const tscProcess = execa(tscCall, {
 
 // tscProcess.all.on('readable'
 // tscProcess.all.on('data'
+// tscProcess.all.
 tscProcess.all.pipe(process.stdout)
